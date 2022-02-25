@@ -4,10 +4,15 @@ import { createWriteStream } from 'fs';
 import { join, resolve } from 'path';
 import { Logger } from '@utils/logger.util';
 import { v4 as uuidv4 } from 'uuid';
+import UserEntity from '@user/entity/user.entity';
+import UserService from '@user/services/user.service';
+import { SignUpInput } from '@user/inputs/user.input';
 
 @Resolver()
 export class UserResolver{
+    private readonly userService: UserService
     constructor(){
+        this.userService = new UserService()
     }
 
     @Query(() => String)
@@ -27,5 +32,13 @@ export class UserResolver{
 
         return true
     }
+
+    @Mutation(() => UserEntity)
+    async createUser(@Arg("body", () => SignUpInput) body: SignUpInput){
+        const user = await this.userService.register(body)
+        return user
+    }
+
+    
     
 } 
