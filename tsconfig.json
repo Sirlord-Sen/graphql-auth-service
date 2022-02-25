@@ -16,6 +16,18 @@
   "sourceMap": true,
   "baseUrl": "./",
   "typeRoots": ["src/@types", "node_modules/@types"],
+  "paths": {
+    "@auth-service/*": ["src/"],
+    "@config/*": ["src/config/*"],
+    "@core/*": ["src/core/*"],
+    "@middlewares/*": ["src/middlewares/*"],
+    "@user/*": ["src/modules/user/*"],
+    "@auth/*": ["src/modules/auth/*"],
+    "@utils/*": ["src/utils/*"],
+    "@providers/*": ["src/providers/*"],
+    "@helpers/*": ["src/helpers/*"],
+    "@db/*": ["src/db/*"]
+  }
 },
 "include": ["./src", "./tests"],
 "exclude": ["node_modules", "dist"]}
