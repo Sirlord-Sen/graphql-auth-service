@@ -6,6 +6,8 @@ import { UserRepository } from '../repository/user.repository'
 // import { ILogin } from '@modules/auth/interfaces/auth.interface'
 // import { FullUser } from '../user.types'
 import UserEntity from '../entity/user.entity'
+import { ForbiddenError } from 'apollo-server-express'
+import { UpdatePassword, User } from '@user/interfaces/user.interface'
 
 export default class UserService {
     public userRepository: UserRepository
@@ -21,30 +23,35 @@ export default class UserService {
         catch(err){ throw err }
     }
 
-    // async findCurrentUser(data: Partial<FullUser>): Promise<IReturnUser>{
-    //     const user = await this.findOne(data)
-    //     return pick(user, ["id", "username", "email", "firstname", "surname"])
-    // }
-    // async findOne(query: Partial<FullUser>): Promise<UserEntity>{
-    //     try{ return await this.userRepository.findOneOrFail({ where: query });}
-    //     catch(err){ throw new NotFoundError("User not found").send() }
-    // }
+    async findCurrentUser(data: Partial<User>): Promise<UserEntity>{
+        const user = await this.findOne(data)
+        return user
+    }
 
-    // async update(query: Partial<FullUser>, body: Partial<Omit<FullUser, 'id'>>): Promise<IReturnUser> {
-    //     const user = await this.userRepository.updateUser(query, body)
-    //     return pick(user, ["id", "username", "email", "firstname", "surname"])
-    // }
+    async findOne(query: Partial<User>): Promise<UserEntity>{
+        try{ return await this.userRepository.findOneOrFail({ where: query });}
+        catch(err){ throw err }
+    }
 
-    // async updatePassword(query: Partial<FullUser>, body: IPassword): Promise<IReturnUser>{
-    //     const { oldPassword, newPassword } = body
-    //     const user = await this.findOne(query)
-    //     const validate = await this.validateLoginCredentials(user, oldPassword)
-    //     if(!validate) throw new UnauthorizedError("Invalid Login Credentials").send()
-    //     return await this.update(query, {password: newPassword})
-    // }
+    async update(query: Partial<User>, body: Partial<Omit<User, 'id'>>): Promise<Omit<UserEntity, 'password'>> {
+        const user = await this.userRepository.updateUser(query, body)
+        delete user.password
+        return user
+    }
 
-    // async validateLoginCredentials(user: Pick<ILogin, 'password'>, password: string):Promise<Boolean>{
-    //     try{return await verify(user.password, password)}
-    //     catch(err){throw new InternalError("Could not verify Password").send()}
-    // }
+    async updatePassword(query: Partial<User>, body: UpdatePassword): Promise<Omit<UserEntity, 'password'>>{
+        const { oldPassword, newPassword } = body
+        const user = await this.findOne(query)
+        const validate = await this.validateLoginCredentials(user, oldPassword)
+        if(!validate) throw new ForbiddenError("Username or Password incorrect")
+        return await this.update(query, {password: newPassword})
+    }
+
+    async validateLoginCredentials(user: Pick<UserEntity, 'password'>, password: string):Promise<Boolean>{
+        try{
+            if(user.password) return await verify(user.password, password)
+            else throw 'No Password Provided'
+        }
+        catch(err){throw err}
+    }
 }

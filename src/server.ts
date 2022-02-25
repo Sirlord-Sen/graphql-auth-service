@@ -9,6 +9,7 @@ import { Application } from 'express'
 import * as bodyParser from 'body-parser'
 import cors from 'cors'
 import morganMiddleware  from '@middlewares/morgan.middleware';
+import authMiddleware from '@middlewares/auth.middleware'
 import { graphqlUploadExpress } from 'graphql-upload';
 
 export default class ExpressServer {
@@ -27,6 +28,7 @@ export default class ExpressServer {
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: true }));
         this.app.use(morganMiddleware)
+        this.app.use(authMiddleware)
         this.app.use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }));
     }  
 
@@ -43,6 +45,7 @@ export default class ExpressServer {
         const Resolvers = path.resolve(__dirname, "modules/**/*.resolver.ts")
 
         const apolloServer = new ApolloServer({
+            // Disabling Apollo's default upload system
             uploads: false,
             schema: await buildSchema({
               resolvers: [Resolvers]

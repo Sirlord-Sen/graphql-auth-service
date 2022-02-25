@@ -34,7 +34,7 @@ export default class UserEntity extends BaseEntity{
     email: string
 
     @Column()
-    password: string
+    password?: string
 
     @Field()
     @Column()
