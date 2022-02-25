@@ -9,7 +9,7 @@ import {
     UpdateDateColumn
 } from 'typeorm'
 
-// @ObjectType()
+@ObjectType()
 @Entity({name: "users"})
 @Unique('UQ_USER_EMAIL', ['email'])
 export default class UserEntity extends BaseEntity{
