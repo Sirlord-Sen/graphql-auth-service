@@ -32,12 +32,14 @@ export class UserResolver{
         return 'hello world'
     }
 
-    
+
     @Mutation(() => Boolean)
     async singleUpload(
-        @Arg("file", () => GraphQLUpload) { createReadStream, mimetype }: FileUpload
-    ) {
+        @Arg("file", () => GraphQLUpload) {createReadStream, mimetype} : FileUpload,
+        @Arg("body") data: SignUpInput
+        ) {
         const profilePicture = `${uuidv4()}-${Date.now()}.${mimetype.split('/')[1]}`
+        console.log(data)
         createReadStream()
             .pipe(createWriteStream(join(resolve("./public"), profilePicture)))
             .on("finish", () => { Logger.info('Images saved in Public Dir') })
@@ -60,3 +62,4 @@ export class UserResolver{
     }    
     
 } 
+'{"query":"mutation SingleUpload($file: Upload!) {\n  singleUpload(\n    body: {\n      username: \"Lordem\",\n      email: \"lodwaf12@gmail.com\",\n      phone:\"+233203655775\",\n      name: \"Sir-Lord Wiafe\"\n      bio: \"I am a very hardworking young man\",\n      password: \"I love God\"\n    },\n    file: $file\n  )\n}\n"}'

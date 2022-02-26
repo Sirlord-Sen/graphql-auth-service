@@ -1,3 +1,5 @@
+import { Stream } from "stream";
+import { FileUpload } from "graphql-upload";
 import { Field, InputType } from "type-graphql";
 
 @InputType()
@@ -23,6 +25,5 @@ export class SignUpInput{
 }
 
 @InputType()
-export class UpdateInput extends SignUpInput{
-    
-}
+export class UpdateInput extends SignUpInput{}
+
