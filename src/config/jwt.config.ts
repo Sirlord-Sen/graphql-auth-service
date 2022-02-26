@@ -1,19 +1,18 @@
 import fs from 'fs'
-import { parsedEnv } from ".";
 import { ParsedVariables } from 'dotenv-parse-variables'
+
+import { parsedEnv } from ".";
 
 class JwtConfig{
     readonly privateAccessKey: Buffer
     readonly privateAccessKeyPassphrase: string
     readonly publicAccessKey: Buffer
-    readonly accessTokenSecret: string;
     readonly accessTokenExpiration: string;
     readonly refreshTokenSecret: string;
     readonly refreshTokenExpiration: string;
 
   
     constructor(parsedEnv: ParsedVariables) {
-      this.accessTokenSecret = String(parsedEnv.ACCESS_TOKEN_SECRET)
       this.privateAccessKey = this.getPrivateAccessKey()
       this.privateAccessKeyPassphrase = String(parsedEnv.PRIVATE_KEY_PASSPHRASE),
       this.publicAccessKey = this.getPublicAccessKey()

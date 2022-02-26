@@ -1,6 +1,7 @@
 import { IncomingHttpHeaders } from 'http';
-import { TokenType } from '@utils/util-types';
 import { ForbiddenError } from 'apollo-server-express';
+
+import { TokenType } from '@utils/util-types';
 
 
 export default (() => {

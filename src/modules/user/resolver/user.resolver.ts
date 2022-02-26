@@ -1,15 +1,22 @@
-import { Arg, Ctx, Mutation, Query, Resolver, UseMiddleware } from 'type-graphql'
 import { FileUpload, GraphQLUpload } from "graphql-upload";
 import { createWriteStream } from 'fs';
 import { join, resolve } from 'path';
-import { Logger } from '@utils/logger.util';
 import { v4 as uuidv4 } from 'uuid';
-import UserEntity from '@user/entity/user.entity';
-import UserService from '@user/services/user.service';
-import { SignUpInput } from '@user/inputs/user.input';
 import { Service } from 'typedi'
 import { Context } from 'apollo-server-core';
 import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
+import { 
+    Arg, 
+    Ctx, 
+    Mutation, 
+    Query, 
+    Resolver, 
+    UseMiddleware 
+} from 'type-graphql'
+
+import { Logger } from '@utils/logger.util';
+import UserService from '@user/services/user.service';
+import { SignUpInput } from '@user/inputs/user.input';
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import { CreateUserDto, UpdateUserDto } from '@user/dto/user.dto';
 
@@ -18,8 +25,7 @@ import { CreateUserDto, UpdateUserDto } from '@user/dto/user.dto';
 export class UserResolver{
     constructor(
         private readonly userService: UserService
-    )
-    {}
+    ){}
 
     @Query(() => String)
     hello(){

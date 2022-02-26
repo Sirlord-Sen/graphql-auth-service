@@ -9,6 +9,7 @@ import {
     CreateDateColumn, 
     UpdateDateColumn 
 } from 'typeorm'
+
 import UserEntity from '@user/entity/user.entity';
 
 @Entity('refresh-tokens')

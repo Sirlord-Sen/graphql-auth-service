@@ -1,5 +1,6 @@
-import UserEntity from "@user/entity/user.entity";
 import { Field, ObjectType } from "type-graphql";
+
+import UserEntity from "@user/entity/user.entity";
 
 @ObjectType()
 export class CreateUserDto{

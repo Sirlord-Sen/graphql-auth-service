@@ -1,6 +1,4 @@
 import * as path from 'path'
-import { Logger }  from '@utils/logger.util';
-import { parsedEnv } from '@config//';
 import { ApolloServer } from 'apollo-server-express'
 import { buildSchema } from 'type-graphql';
 import { Container } from "typedi";
@@ -8,9 +6,12 @@ import express from 'express'
 import { Application } from 'express'
 import * as bodyParser from 'body-parser'
 import cors from 'cors'
-import morganMiddleware  from '@middlewares/morgan.middleware';
 import useragent from 'express-useragent'
 import { graphqlUploadExpress } from 'graphql-upload';
+
+import morganMiddleware  from '@middlewares/morgan.middleware';
+import { Logger }  from '@utils/logger.util';
+import { parsedEnv } from '@config//';
 
 export default class ExpressServer {
     public app: Application;

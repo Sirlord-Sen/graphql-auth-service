@@ -1,4 +1,9 @@
-import { ConnectionOptions, createConnection, getConnection } from 'typeorm'
+import { 
+    ConnectionOptions, 
+    createConnection, 
+    getConnection 
+} from 'typeorm'
+
 import { Logger } from '@utils/logger.util'
 import { DBConfig } from '@config//'
 

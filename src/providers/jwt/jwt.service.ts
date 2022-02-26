@@ -1,9 +1,15 @@
-import jwt, { Secret, SignOptions, VerifyErrors, VerifyOptions } from 'jsonwebtoken';
-import { DateHelper } from '@helpers//';
-import { Logger } from '@utils/logger.util';
-import { CodeError } from '@utils/util-types' 
 import { ForbiddenError } from 'apollo-server-express';
 import { Service } from 'typedi';
+import jwt, { 
+    Secret, 
+    SignOptions, 
+    VerifyErrors, 
+    VerifyOptions 
+} from 'jsonwebtoken'; 
+
+import { DateHelper } from '@helpers//';
+import { Logger } from '@utils/logger.util';
+import { CodeError } from '@utils/util-types'
 
 @Service()
 export default class JWTService {

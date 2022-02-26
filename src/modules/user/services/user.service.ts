@@ -1,14 +1,10 @@
 import { verify } from 'argon2'
 import { getCustomRepository } from 'typeorm'
-// import { IPassword, IReturnUser, IUser } from '../interfaces/user.interface'
-import { UserRepository } from '../repository/user.repository'
-// import { InternalError, NotFoundError, UnauthorizedError } from '@utils/error-response.util'
-// import { ILogin } from '@modules/auth/interfaces/auth.interface'
-// import { FullUser } from '../user.types'
-import UserEntity from '../entity/user.entity'
-import { ForbiddenError } from 'apollo-server-express'
-import { FullUser, safeFullUser, UpdatePassword, User } from '@user/interfaces/user.interface'
 import { Service } from "typedi";
+
+import { UserRepository } from '../repository/user.repository'
+import UserEntity from '../entity/user.entity'
+import { FullUser } from '@user/interfaces/user.interface'
 
 @Service()
 export default class UserService {

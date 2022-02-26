@@ -5,6 +5,7 @@ import {
   InsertEvent,
   UpdateEvent,
 } from 'typeorm';
+
 import UserEntity  from '../entity/user.entity';
 
 @EventSubscriber()

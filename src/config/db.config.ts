@@ -1,5 +1,6 @@
-import { parsedEnv } from ".";
 import { ParsedVariables } from 'dotenv-parse-variables'
+
+import { parsedEnv } from ".";
 
 class DBConfig{
     readonly type: any;

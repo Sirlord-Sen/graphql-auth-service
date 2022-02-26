@@ -1,8 +1,6 @@
-import { Response } from "express";
-import { TokenType } from "@utils/util-types";
-import RefreshTokenEntity from "@auth/entity/refreshToken.entity";
 import { Field, ObjectType } from "type-graphql";
-import { type } from "os";
+
+import { TokenType } from "@utils/util-types";
 import UserEntity from "@user/entity/user.entity";
 
 export interface ITokenPayload{

@@ -1,6 +1,7 @@
+import { Field, ObjectType } from "type-graphql";
+
 import { ITokenResponse } from "@auth/interfaces/token.interface";
 import UserEntity from "@user/entity/user.entity";
-import { Field, ObjectType } from "type-graphql";
 
 @ObjectType()
 export class LoginDto{

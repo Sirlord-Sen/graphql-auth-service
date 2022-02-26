@@ -1,5 +1,6 @@
 import { StreamOptions } from "morgan";
 import morgan from 'morgan'
+
 import { Logger }  from '@utils/logger.util'
 
 const stream: StreamOptions = { 

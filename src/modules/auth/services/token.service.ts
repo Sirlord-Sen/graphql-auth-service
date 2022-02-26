@@ -1,30 +1,28 @@
-import {SignOptions, JwtPayload, Secret, VerifyOptions} from 'jsonwebtoken'
+import {SignOptions, JwtPayload, Secret} from 'jsonwebtoken'
+import { getCustomRepository } from "typeorm";
+import { pick } from 'lodash'
+import { Service } from 'typedi'
 import { nanoid } from 'nanoid'
+
 import JWTService from "@providers/jwt/jwt.service";
 import { DateHelper } from "@helpers//";
 import RefreshTokenRepository from "../repository/refreshToken.repository";
-import { getCustomRepository } from "typeorm";
 import { TokenType } from "@utils/util-types";
 import { JwtConfig } from '@config//';
-import { FullRefreshToken, IAccessTokenRequest, IRefreshToken, IRefreshTokenRequest, IResolveRefreshToken, ITokenRequest, ITokenResponse, RefreshTokenPayload, UserAgent } from '../interfaces/token.interface';
 import UserService from '@user/services/user.service';
-// import { FullUser } from '@user/user.types';
-// import { 
-//     TokenRequest, 
-//     AccessTokenRequest, 
-//     RefreshTokenRequest, 
-//     FullRefreshToken, 
-//     RefreshTokenPayload, 
-//     RefreshToken, 
-//     AccessTokenPayload, 
-//     AccessTokenResponse
-// } from "../auth.types";
-// import { Logger } from '@utils/logger.util';
-import { pick } from 'lodash'
-import { Service } from 'typedi'
 import RefreshTokenEntity from '@auth/entity/refreshToken.entity';
 import UserEntity from '@user/entity/user.entity';
 import { Logger } from '@utils/logger.util';
+import { 
+    FullRefreshToken, 
+    IAccessTokenRequest, 
+    IRefreshTokenRequest, 
+    IResolveRefreshToken, 
+    ITokenRequest, 
+    ITokenResponse, 
+    RefreshTokenPayload, 
+    UserAgent 
+} from '../interfaces/token.interface';
 
 @Service()
 export default class TokenService {

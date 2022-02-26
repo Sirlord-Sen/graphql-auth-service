@@ -1,9 +1,9 @@
+import { Service } from 'typedi'
+
 import UserService from "@user/services/user.service";
 import TokenService from "./token.service";
 import { IRefreshToken, ITokenResponse } from "../interfaces/token.interface";
 import { TokenType } from "@utils/util-types";
-import { nanoid } from "nanoid";
-import { Service } from 'typedi'
 import UserEntity from "@user/entity/user.entity";
 import { ILogin, ILogout } from "@auth/interfaces/auth.interface";
 
