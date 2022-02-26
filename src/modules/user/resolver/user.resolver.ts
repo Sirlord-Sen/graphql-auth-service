@@ -11,6 +11,7 @@ import { Service } from 'typedi'
 import { Context } from 'apollo-server-core';
 import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 import { AuthMiddleware } from '@middlewares/auth.middleware';
+import { CreateUserDto, UpdateUserDto } from '@user/dto/user.dto';
 
 @Service()
 @Resolver()
@@ -38,18 +39,18 @@ export class UserResolver{
         return true
     }
 
-    @Mutation(() => UserEntity)
+    @Mutation(() => CreateUserDto)
     async createUser(@Arg("body") body: SignUpInput){
         const user = await this.userService.register(body)
-        return user
+        return { message: "User Created", user}
     }
 
-    @Mutation(() => UserEntity)
+    @Mutation(() => UpdateUserDto)
     @UseMiddleware(AuthMiddleware)
     async updateUser(@Arg('body') body: SignUpInput, @Ctx() ctx: Context<ExpressContext>) {
         const { userId } = ctx.req.currentUser
         const user = await this.userService.update({id: userId}, body)
-        return user
+        return { message: "User Updated", user}
     }    
     
 } 

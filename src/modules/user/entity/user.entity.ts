@@ -23,11 +23,7 @@ export default class UserEntity extends BaseEntity{
 
     @Field()
     @Column()
-    firstname: string
-
-    @Field()
-    @Column()
-    surname: string
+    name: string
 
     @Field()
     @Column()

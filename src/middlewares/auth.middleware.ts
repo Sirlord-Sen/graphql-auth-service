@@ -14,7 +14,6 @@ export class AuthMiddleware implements MiddlewareInterface<ExpressContext>{
         const { req } = context
         const accessToken = TokenHelper.getTokenFromHeader(req.headers)
         if(accessToken) {
-            console.log("Null Rejection working just fine")
             try {
                 
                 const publicKey = JwtConfig.publicAccessKey
@@ -37,7 +36,6 @@ export class AuthMiddleware implements MiddlewareInterface<ExpressContext>{
             } 
             catch (err:any) { throw new Error(err)}
         }
-
-        return next()
+        throw new Error("No Token Found")
     }
   }

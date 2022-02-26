@@ -1,6 +1,7 @@
 import { EntityRepository, Repository } from 'typeorm';
 import RefreshTokenEntity  from '../entity/refreshToken.entity';
 import { Logger } from '@utils/logger.util';
+import { FullRefreshToken } from '@auth/interfaces/token.interface';
 
 @EntityRepository(RefreshTokenEntity)
 export default class RefreshTokenRepository extends Repository<RefreshTokenEntity> {
@@ -14,7 +15,7 @@ export default class RefreshTokenRepository extends Repository<RefreshTokenEntit
         catch(err){ throw err }
   }
 
-    async findOneToken( query:any): Promise<RefreshTokenEntity> {
+    async findOneToken( query:Partial<FullRefreshToken>): Promise<RefreshTokenEntity> {
         try{ return await this.findOneOrFail({ where: query }); }
         catch(err){ throw err }
     }

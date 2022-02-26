@@ -19,33 +19,10 @@ export class SignUpInput{
     phone: string
 
     @Field()
-    firstname: string
-
-    @Field()
-    surname: string
+    name: string
 }
 
 @InputType()
-export class UpdateInput{
-    @Field()
-    username: string
-
-    @Field()
-    email: string
-
-    // Make Bio an optional field
-    @Field()
-    bio?: string
-
-    @Field()
-    password: string
-
-    @Field()
-    phone: string
-
-    @Field()
-    firstname: string
-
-    @Field()
-    surname: string
+export class UpdateInput extends SignUpInput{
+    
 }

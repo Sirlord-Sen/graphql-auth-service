@@ -25,7 +25,7 @@ export default class UserService {
         catch(err){ throw err }
     }
 
-    async findOne(query: Partial<User>): Promise<UserEntity>{
+    async findOne(query: Partial<FullUser>): Promise<UserEntity>{
         try{ return await this.userRepository.findOneOrFail({ where: query });}
         catch(err){ throw err }
     }

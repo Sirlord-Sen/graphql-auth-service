@@ -24,6 +24,11 @@ export default class JWTService {
         });
     }
 
+    verify<T>(token: string, secret: string) {
+        //TODO: When Refresh Token is expired, revoke in database
+        return jwt.verify(token, secret) as T;
+    }
+
     async verifyAsync<T>(token: string, key: Secret, opts: VerifyOptions): Promise<T> {
         return new Promise((resolve, reject) => {
             jwt.verify(token, key, opts, (error: VerifyErrors | null, decoded) => {
