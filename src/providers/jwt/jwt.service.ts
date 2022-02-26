@@ -3,7 +3,9 @@ import { DateHelper } from '@helpers//';
 import { Logger } from '@utils/logger.util';
 import { CodeError } from '@utils/util-types' 
 import { ForbiddenError } from 'apollo-server-express';
+import { Service } from 'typedi';
 
+@Service()
 export default class JWTService {
 
     async signAsync<T>(payload: T, secret: Secret, opts?: SignOptions): Promise<string> {

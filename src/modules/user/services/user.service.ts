@@ -7,8 +7,10 @@ import { UserRepository } from '../repository/user.repository'
 // import { FullUser } from '../user.types'
 import UserEntity from '../entity/user.entity'
 import { ForbiddenError } from 'apollo-server-express'
-import { UpdatePassword, User } from '@user/interfaces/user.interface'
+import { FullUser, safeFullUser, UpdatePassword, User } from '@user/interfaces/user.interface'
+import { Service } from "typedi";
 
+@Service()
 export default class UserService {
     public userRepository: UserRepository
     constructor(){
@@ -23,28 +25,15 @@ export default class UserService {
         catch(err){ throw err }
     }
 
-    async findCurrentUser(data: Partial<User>): Promise<UserEntity>{
-        const user = await this.findOne(data)
-        return user
-    }
-
     async findOne(query: Partial<User>): Promise<UserEntity>{
         try{ return await this.userRepository.findOneOrFail({ where: query });}
         catch(err){ throw err }
     }
 
-    async update(query: Partial<User>, body: Partial<Omit<User, 'id'>>): Promise<Omit<UserEntity, 'password'>> {
+    async update(query: Partial<FullUser>, body: Partial<Omit<FullUser, 'id'>>): Promise<UserEntity> {
         const user = await this.userRepository.updateUser(query, body)
         delete user.password
         return user
-    }
-
-    async updatePassword(query: Partial<User>, body: UpdatePassword): Promise<Omit<UserEntity, 'password'>>{
-        const { oldPassword, newPassword } = body
-        const user = await this.findOne(query)
-        const validate = await this.validateLoginCredentials(user, oldPassword)
-        if(!validate) throw new ForbiddenError("Username or Password incorrect")
-        return await this.update(query, {password: newPassword})
     }
 
     async validateLoginCredentials(user: Pick<UserEntity, 'password'>, password: string):Promise<Boolean>{

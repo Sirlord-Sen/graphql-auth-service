@@ -1,4 +1,4 @@
-import { Arg, Mutation, Query, Resolver } from 'type-graphql'
+import { Arg, Ctx, Mutation, Query, Resolver, UseMiddleware } from 'type-graphql'
 import { FileUpload, GraphQLUpload } from "graphql-upload";
 import { createWriteStream } from 'fs';
 import { join, resolve } from 'path';
@@ -7,13 +7,18 @@ import { v4 as uuidv4 } from 'uuid';
 import UserEntity from '@user/entity/user.entity';
 import UserService from '@user/services/user.service';
 import { SignUpInput } from '@user/inputs/user.input';
+import { Service } from 'typedi'
+import { Context } from 'apollo-server-core';
+import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
+import { AuthMiddleware } from '@middlewares/auth.middleware';
 
+@Service()
 @Resolver()
 export class UserResolver{
-    private readonly userService: UserService
-    constructor(){
-        this.userService = new UserService()
-    }
+    constructor(
+        private readonly userService: UserService
+    )
+    {}
 
     @Query(() => String)
     hello(){
@@ -34,11 +39,17 @@ export class UserResolver{
     }
 
     @Mutation(() => UserEntity)
-    async createUser(@Arg("body", () => SignUpInput) body: SignUpInput){
+    async createUser(@Arg("body") body: SignUpInput){
         const user = await this.userService.register(body)
         return user
     }
 
-    
+    @Mutation(() => UserEntity)
+    @UseMiddleware(AuthMiddleware)
+    async updateUser(@Arg('body') body: SignUpInput, @Ctx() ctx: Context<ExpressContext>) {
+        const { userId } = ctx.req.currentUser
+        const user = await this.userService.update({id: userId}, body)
+        return user
+    }    
     
 } 

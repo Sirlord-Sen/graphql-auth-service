@@ -1,15 +1,18 @@
 import { JwtConfig } from "@config//";
 import { TokenHelper } from "@helpers//";
 import { VerifyOptions, JwtPayload } from 'jsonwebtoken'
-import { NextFunction, Request, Response } from "express";
 import JWTService from "@providers/jwt/jwt.service";
+import { MiddlewareInterface, NextFn, ResolverData } from "type-graphql";
+import { ExpressContext } from "apollo-server-express/dist/ApolloServer";
+import { Service } from "typedi";
 
-export default (async (req: any, res: Response, next: NextFunction) => {
-    const jwtService = new JWTService()
-
-    const id = req.params.id
+@Service()
+export class AuthMiddleware implements MiddlewareInterface<ExpressContext>{
+    constructor(private readonly jwtService: JWTService) {}
+  
+    async use({ context, info }: ResolverData<ExpressContext>, next: NextFn) {
+        const { req } = context
         const accessToken = TokenHelper.getTokenFromHeader(req.headers)
-        req.currentUser = null
         if(accessToken) {
             console.log("Null Rejection working just fine")
             try {
@@ -20,7 +23,7 @@ export default (async (req: any, res: Response, next: NextFunction) => {
                     algorithms: ['RS256']
                 }
 
-                const data = await jwtService.verifyAsync<JwtPayload>(
+                const data = await this.jwtService.verifyAsync<JwtPayload>(
                     accessToken,
                     publicKey,
                     verifyOptions
@@ -32,8 +35,9 @@ export default (async (req: any, res: Response, next: NextFunction) => {
 
                 return next();
             } 
-            catch (err) { return next(err) }
+            catch (err:any) { throw new Error(err)}
         }
 
         return next()
-})
+    }
+  }
