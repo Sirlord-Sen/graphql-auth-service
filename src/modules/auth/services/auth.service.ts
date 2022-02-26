@@ -2,7 +2,7 @@ import { Service } from 'typedi'
 
 import UserService from "@user/services/user.service";
 import TokenService from "./token.service";
-import { IRefreshToken, ITokenResponse } from "../interfaces/token.interface";
+import { IRefreshToken, ITokenResponse, RefreshTokenResponse } from "../interfaces/token.interface";
 import { TokenType } from "@utils/util-types";
 import UserEntity from "@user/entity/user.entity";
 import { ILogin, ILogout } from "@auth/interfaces/auth.interface";
@@ -25,10 +25,10 @@ export default class AuthService {
     }
 
     async logout(body:ILogout): Promise<void>{
-        await this.tokenService.update({...body }, {isRevoked: true });
+        await this.tokenService.update({...body, isRevoked: false }, {isRevoked: true });
     }
 
-    async refreshToken(body: IRefreshToken): Promise<ITokenResponse>{
+    async refreshToken(body: IRefreshToken): Promise<RefreshTokenResponse>{
         let { id, email }  = await this.tokenService.resolveRefreshToken(body.refreshToken)
         const { accessToken, expiredAt } = await this.tokenService.generateAccessToken({userId: id, email })
         const tokens = { tokenType: TokenType.BEARER , accessToken, expiredAt, refreshToken: body.refreshToken }

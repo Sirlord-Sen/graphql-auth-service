@@ -10,7 +10,7 @@ export interface ITokenPayload{
 };
 
 @ObjectType()
-export class ITokenResponse {
+export class RefreshTokenResponse {
     @Field()
     accessToken: string
 
@@ -22,6 +22,12 @@ export class ITokenResponse {
 
     @Field()
     expiredAt: Date
+}
+
+@ObjectType()
+export class ITokenResponse extends RefreshTokenResponse{
+    @Field({nullable: true})
+    lastSignIn?: Date
 }
 
 export interface ITokenRequest {
@@ -38,6 +44,16 @@ export interface IRefreshToken{
 export interface IAccessTokenRequest{
     userId: string,
     email: string
+}
+
+export interface IAccessTokenResponse{
+    accessToken: string, 
+    expiredAt: Date
+}
+
+export interface IRefreshTokenResponse{
+    refreshToken: string, 
+    lastSignIn: Date | undefined
 }
 
 export interface IRefreshTokenRequest {

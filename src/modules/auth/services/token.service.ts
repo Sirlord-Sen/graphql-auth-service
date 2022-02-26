@@ -16,7 +16,9 @@ import { Logger } from '@utils/logger.util';
 import { 
     FullRefreshToken, 
     IAccessTokenRequest, 
+    IAccessTokenResponse, 
     IRefreshTokenRequest, 
+    IRefreshTokenResponse, 
     IResolveRefreshToken, 
     ITokenRequest, 
     ITokenResponse, 
@@ -36,7 +38,7 @@ export default class TokenService {
         this.tokenType = TokenType.BEARER 
     }
 
-    async generateAccessToken(body:IAccessTokenRequest, confirmTokenPassword?: string):Promise<any>{
+    async generateAccessToken(body:IAccessTokenRequest, confirmTokenPassword?: string):Promise<IAccessTokenResponse>{
         const { userId } = body
         const privateAccessSecret: Secret = {
             key: JwtConfig.privateAccessKey,
@@ -62,20 +64,36 @@ export default class TokenService {
         return {accessToken, expiredAt}
     }
 
-    async generateRefreshToken(body:IRefreshTokenRequest, useragent: UserAgent):Promise<string>{
+    async lastSignIn(body:IRefreshTokenRequest, useragent: UserAgent): Promise<RefreshTokenEntity | undefined>{
+        const lastSignIn = (await this.refreshTokenRepository.find({
+            where: {
+                ...useragent, 
+                ...body, 
+                isRevoked: true
+            },   
+            order: {
+                created_at: "DESC"
+            }
+        }))[0]
+
+        console.log(lastSignIn)
+
+        if(lastSignIn) return lastSignIn
+        return undefined
+    }
+
+    async generateRefreshToken(body:IRefreshTokenRequest, useragent: UserAgent):Promise<IRefreshTokenResponse>{
         const jti = nanoid();
         const ms = DateHelper.convertToMS(JwtConfig.refreshTokenExpiration);
         const expiredAt = DateHelper.addMillisecondToDate(new Date(), ms);
 
         // Only Allowing User to Login again after logout with same broswer and OS
-        try{
-            if ((await this.refreshTokenRepository.findOne({...useragent, isRevoked: false}))) {
-                Logger.warn("Attempting to Signin again from same device")
-                throw new Error ("User Already Signed In")
-            }
+        if ((await this.refreshTokenRepository.findOne({...useragent, ...body , isRevoked: false}))) {
+            Logger.warn("Attempting to Signin again from same device")
+            throw new Error ("User Already Signed In")
         }
-        catch(err){throw err}
-        
+
+        const lastSignIn = (await this.lastSignIn(body, useragent))?.created_at
 
         const savedRefreshToken = await this.refreshTokenRepository.createRefreshToken({ ...body, ...useragent ,jti, expiredAt });
 
@@ -89,17 +107,19 @@ export default class TokenService {
             typ: TokenType.BEARER,
         };
 
-        return this.jwtService.signAsync<JwtPayload>(payload, JwtConfig.refreshTokenSecret, opts)
+        const refreshToken = await this.jwtService.signAsync<JwtPayload>(payload, JwtConfig.refreshTokenSecret, opts)
+
+        return { refreshToken, lastSignIn }
     }
 
     async getTokens(user: ITokenRequest, agent: UserAgent):Promise<ITokenResponse>{
         const { id, email } = user;
-        const [{accessToken, expiredAt}, refreshToken] = await Promise.all([
+        const [{accessToken, expiredAt}, {refreshToken, lastSignIn}] = await Promise.all([
             this.generateAccessToken({ email: email, userId: id }),
             this.generateRefreshToken({ userId: id }, agent)
         ]);
           
-        return { tokenType: this.tokenType ,expiredAt , accessToken, refreshToken};
+        return { tokenType: this.tokenType ,expiredAt , accessToken, refreshToken, lastSignIn };
     }
 
     async update(query: Partial<FullRefreshToken>, body: Partial<RefreshTokenEntity>): Promise<void>{
@@ -136,19 +156,4 @@ export default class TokenService {
         const { sub } = payload;    
         return this.userService.findOne({ id: sub });
     }
-
-    // async decodeForgotPasswordToken(token:string): Promise<AccessTokenPayload> {
-    //     const publicKey = JwtConfig.publicAccessKey
-    //     const verifyOptions: VerifyOptions = {
-    //         algorithms: ['RS256']
-    //     }
-    //     const payload = await this.jwtService.verifyAsync<AccessTokenPayload>(
-    //         token,
-    //         publicKey,
-    //         verifyOptions
-    //     );
-    //     const { jti, sub } = payload
-    //     if (!jti || !sub) throw new Error('Token Malfunctioned')
-    //     return payload
-    // }
 }
