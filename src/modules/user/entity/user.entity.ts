@@ -6,8 +6,11 @@ import {
     BaseEntity, 
     Unique, 
     CreateDateColumn,
-    UpdateDateColumn
+    UpdateDateColumn,
+    OneToOne,
+    JoinColumn
 } from 'typeorm'
+import ProfileEntity from './profile.entity'
 
 @ObjectType()
 @Entity({name: "users"})
@@ -33,16 +36,13 @@ export default class UserEntity extends BaseEntity{
     password?: string
 
     @Field()
-    @Column()
-    bio?: string
-
-    @Field()
-    @Column()
-    phone: string
-
-    @Field()
     @Column('text', { nullable: true })
     confirmTokenPassword?: string;
+
+    @Field()
+    @OneToOne(() => ProfileEntity, profile => profile.user)
+    @JoinColumn()
+    profile?: ProfileEntity;
 
     @Field()
     @CreateDateColumn()

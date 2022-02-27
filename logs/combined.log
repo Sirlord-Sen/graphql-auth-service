@@ -12133,3 +12133,1191 @@
 [2022-02-26 04:33:14:3314] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27519 - 23.587 ms[39m
 [35m[39m 
 
+[2022-02-27 11:28:08:288] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:28:10:2810] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:28:17:2817] [35mhttp[39m: [35m::1 - GET / HTTP/1.1 404 139 - 9.993 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:35:2835] [35mhttp[39m: [35m::1 - GET /graphql HTTP/1.1 200 - - 5.666 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:40:2840] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 105.913 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:41:2841] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 28.967 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:43:2843] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 16.526 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:46:2846] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 19.645 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:48:2848] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 15.938 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:56:2856] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 31 - 980.983 ms[39m
+[35m[39m 
+
+[2022-02-27 11:28:56:2856] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 11:30:45:3045] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27709 - 12.869 ms[39m
+[35m[39m 
+
+[2022-02-27 11:31:45:3145] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:31:48:3148] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:34:44:3444] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:34:46:3446] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:36:10:3610] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:36:12:3612] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:39:57:3957] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:40:01:401] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:55:14:5514] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:55:16:5516] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:55:31:5531] [31merror[39m: [31mYou need to provide explicit type for ProfileEntity#user ![39m 
+
+[2022-02-27 11:55:32:5532] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:55:32:5532] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for ProfileEntity#user ![39m 
+
+[2022-02-27 11:55:44:5544] [31merror[39m: [31mYou need to provide explicit type for ProfileEntity#user ![39m 
+
+[2022-02-27 11:55:46:5546] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 11:55:46:5546] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for ProfileEntity#user ![39m 
+
+[2022-02-27 11:56:27:5627] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 11:56:29:5629] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:01:14:114] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:01:16:116] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:01:45:145] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:01:47:147] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:02:58:258] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:03:00:30] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:03:56:356] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:03:58:358] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:05:50:550] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:05:52:552] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:07:35:735] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:07:36:736] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:14:31:1431] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:14:33:1433] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:17:09:179] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:17:11:1711] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:18:11:1811] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:18:13:1813] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:18:52:1852] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:18:54:1854] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:19:24:1924] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 126.108 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:27:1927] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 50.603 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:29:1929] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 22.986 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:31:1931] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 27.665 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:33:1933] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.007 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:35:1935] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 20.297 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:37:1937] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.466 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:39:1939] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 19.505 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:41:1941] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 20.351 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:42:1942] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 400 1708 - 82.541 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:43:1943] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.187 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:45:1945] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 20.726 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:47:1947] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.562 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:49:1949] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.101 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:51:1951] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 29.278 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:52:1952] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 400 1708 - 37.838 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:53:1953] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 17.729 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:55:1955] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.881 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:57:1957] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 22.152 ms[39m
+[35m[39m 
+
+[2022-02-27 12:19:59:1959] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 17.003 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:01:201] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.954 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:03:203] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 17.016 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:05:205] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 14.192 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:07:207] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 16.197 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:09:209] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 6.342 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:11:2011] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 14.579 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:14:2014] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 20.015 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:16:2016] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.102 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:18:2018] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.147 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:20:2020] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.983 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:22:2022] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.451 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:24:2024] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.461 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:26:2026] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.470 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:28:2028] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 14.922 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:30:2030] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.645 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:32:2032] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.429 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:34:2034] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.304 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:36:2036] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.779 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:38:2038] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 17.645 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:40:2040] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 17.571 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:42:2042] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.155 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:44:2044] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.578 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:46:2046] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 15.669 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:49:2049] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 14.914 ms[39m
+[35m[39m 
+
+[2022-02-27 12:20:51:2051] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 26.282 ms[39m
+[35m[39m 
+
+[2022-02-27 12:21:23:2123] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:21:25:2125] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:21:35:2135] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28265 - 85.671 ms[39m
+[35m[39m 
+
+[2022-02-27 12:21:39:2139] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28265 - 20.955 ms[39m
+[35m[39m 
+
+[2022-02-27 12:21:46:2146] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:21:46:2146] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 31 - 941.575 ms[39m
+[35m[39m 
+
+[2022-02-27 12:22:26:2226] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28265 - 36.547 ms[39m
+[35m[39m 
+
+[2022-02-27 12:22:56:2256] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:22:59:2259] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:22:59:2259] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 26.934 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:02:232] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 20.916 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:04:234] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.608 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:06:236] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 4.558 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:08:238] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.701 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:10:2310] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 11.310 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:12:2312] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.056 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:14:2314] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.272 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:16:2316] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 23.219 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:18:2318] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 12.540 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:20:2320] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 36.708 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:22:2322] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 28.485 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:24:2324] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.054 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:25:2325] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 19.790 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:26:2326] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 18.353 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:28:2328] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 13.930 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:30:2330] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 22.710 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:32:2332] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 10.354 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:34:2334] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 9.420 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:36:2336] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28271 - 16.096 ms[39m
+[35m[39m 
+
+[2022-02-27 12:23:44:2344] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 14.111 ms[39m
+[35m[39m 
+
+[2022-02-27 12:24:54:2454] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:24:58:2458] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:24:58:2458] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 129.298 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:01:251] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 28.106 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:03:253] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 18.433 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:05:255] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 11.182 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:07:257] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 11.393 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:09:259] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 11.366 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:11:2511] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 13.254 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:15:2515] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 16.330 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:17:2517] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 8.233 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:19:2519] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 11.728 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:21:2521] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 9.248 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:23:2523] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 3.519 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:25:2525] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 19.379 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:27:2527] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 27.481 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:29:2529] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 14.923 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:31:2531] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 18.970 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:33:2533] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 14.135 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:35:2535] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 18.494 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:37:2537] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 15.106 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:39:2539] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 22.324 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:41:2541] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 12.911 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:44:2544] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 14.385 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:46:2546] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 6.181 ms[39m
+[35m[39m 
+
+[2022-02-27 12:25:48:2548] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28271 - 8.599 ms[39m
+[35m[39m 
+
+[2022-02-27 12:26:12:2612] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 400 1182 - 34.144 ms[39m
+[35m[39m 
+
+[2022-02-27 12:27:24:2724] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:27:24:2724] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 98 - 1224.865 ms[39m
+[35m[39m 
+
+[2022-02-27 12:27:54:2754] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:27:55:2755] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:28:51:2851] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:28:53:2853] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:35:53:3553] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:35:55:3555] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:35:55:3555] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: ⨯ Unable to compile TypeScript:[39m
+[33m[96msrc/modules/user/resolver/user.resolver.ts[0m:[93m50[0m:[93m17[0m - [91merror[0m[90m TS2339: [0mProperty 'newProfile' does not exist on type 'UserEntity'.[39m
+
+[33m[7m50[0m         const { newProfile, newUser } = await this.userService.register(user, profile)[39m
+[33m[7m  [0m [91m                ~~~~~~~~~~[0m[39m
+[33m[96msrc/modules/user/resolver/user.resolver.ts[0m:[93m50[0m:[93m29[0m - [91merror[0m[90m TS2339: [0mProperty 'newUser' does not exist on type 'UserEntity'.[39m
+
+[33m[7m50[0m         const { newProfile, newUser } = await this.userService.register(user, profile)[39m
+[33m[7m  [0m [91m                            ~~~~~~~[0m[39m
+[33m[39m 
+
+[2022-02-27 12:36:58:3658] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:37:00:370] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:37:00:370] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for CreateUserDto#user ![39m 
+
+[2022-02-27 12:37:40:3740] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:37:42:3742] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:37:55:3755] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 88.577 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:00:380] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 36.464 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:04:384] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:38:04:384] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 2346 - 1037.631 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:18:3818] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:38:18:3818] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 747 - 257.689 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:38:3838] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 30.168 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:40:3840] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 30.461 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:42:3842] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 50.061 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:44:3844] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.121 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:46:3846] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 23.590 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:48:3848] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 20.649 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:50:3850] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.347 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:52:3852] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.209 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:54:3854] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 21.760 ms[39m
+[35m[39m 
+
+[2022-02-27 12:38:58:3858] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.171 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:00:390] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.041 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:02:392] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 21.194 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:04:394] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.139 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:06:396] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 14.976 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:08:398] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 23.708 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:10:3910] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 11.753 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:12:3912] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.440 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:14:3914] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 21.900 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:16:3916] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.584 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:18:3918] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 13.782 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:20:3920] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 7.714 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:22:3922] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.851 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:24:3924] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 24.492 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:26:3926] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 13.012 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:28:3928] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.932 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:30:3930] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.936 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:32:3932] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 20.193 ms[39m
+[35m[39m 
+
+[2022-02-27 12:39:34:3934] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.825 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:21:4021] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:40:25:4025] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:40:25:4025] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 64.400 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:28:4028] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 24.617 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:31:4031] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 13.769 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:34:4034] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 19.142 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:37:4037] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 15.979 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:40:4040] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 15.757 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:41:4041] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:40:41:4041] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 261 - 1376.180 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:43:4043] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 26.529 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:46:4046] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 14.981 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:49:4049] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 17.120 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:52:4052] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 12.778 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:55:4055] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 10.029 ms[39m
+[35m[39m 
+
+[2022-02-27 12:40:58:4058] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 10.632 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:01:411] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 17.446 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:04:414] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 23.633 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:07:417] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 15.749 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:10:4110] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 17.476 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:13:4113] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 18.694 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:16:4116] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 19.428 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:19:4119] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 18.707 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:22:4122] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 13.919 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:25:4125] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 15.226 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:28:4128] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 17.711 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:31:4131] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 21.036 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:34:4134] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28665 - 17.980 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:45:4145] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:41:47:4147] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:41:48:4148] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 31.001 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:50:4150] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.821 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:53:4153] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.632 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:56:4156] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.565 ms[39m
+[35m[39m 
+
+[2022-02-27 12:41:59:4159] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 18.007 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:02:422] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 43.372 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:05:425] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 37.933 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:08:428] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 26.055 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:11:4211] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 22.666 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:14:4214] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.204 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:17:4217] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.091 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:20:4220] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.929 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:23:4223] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.903 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:26:4226] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.121 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:29:4229] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 14.159 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:32:4232] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 14.102 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:35:4235] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 21.059 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:38:4238] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 24.343 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:41:4241] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.560 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:44:4244] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 13.780 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:47:4247] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 11.860 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:50:4250] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 8.070 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:53:4253] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 16.092 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:56:4256] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 14.954 ms[39m
+[35m[39m 
+
+[2022-02-27 12:42:59:4259] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 19.634 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:02:432] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 17.037 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:05:435] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 5.389 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:08:438] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.298 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:19:4319] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:43:22:4322] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:43:22:4322] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 34.342 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:25:4325] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 19.372 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:35:4335] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:43:38:4338] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:43:38:4338] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for CreateUserDto#user ![39m 
+
+[2022-02-27 12:43:42:4342] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 404 147 - 15.051 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:48:4348] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 14.232 ms[39m
+[35m[39m 
+
+[2022-02-27 12:43:54:4354] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.771 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:00:440] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 8.720 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:06:446] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 4.861 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:12:4412] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 10.276 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:18:4418] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 6.422 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:24:4424] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.506 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:30:4430] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 2.747 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:36:4436] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.664 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:42:4442] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.955 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:48:4448] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 5.362 ms[39m
+[35m[39m 
+
+[2022-02-27 12:44:54:4454] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.556 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:00:450] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.287 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:06:456] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.884 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:12:4512] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.208 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:18:4518] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.916 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:24:4524] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.805 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:30:4530] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.946 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:36:4536] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.188 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:42:4542] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.859 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:48:4548] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.945 ms[39m
+[35m[39m 
+
+[2022-02-27 12:45:54:4554] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.309 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:00:460] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.355 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:06:466] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.234 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:12:4612] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.813 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:18:4618] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.843 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:24:4624] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.190 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:30:4630] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.882 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:36:4636] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.687 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:42:4642] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.431 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:48:4648] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.801 ms[39m
+[35m[39m 
+
+[2022-02-27 12:46:54:4654] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 2.314 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:00:470] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.798 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:06:476] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.798 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:16:4716] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:47:18:4718] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:47:18:4718] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for CreateUserDto#user ![39m 
+
+[2022-02-27 12:47:22:4722] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 4.965 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:28:4728] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 14.489 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:34:4734] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 28.580 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:40:4740] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 6.849 ms[39m
+[35m[39m 
+
+[2022-02-27 12:47:53:4753] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:47:55:4755] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:47:55:4755] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: You need to provide explicit type for CreateUserDto#user ![39m 
+
+[2022-02-27 12:47:56:4756] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 16.751 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:02:482] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 9.228 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:08:488] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.115 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:14:4814] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 4.534 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:20:4820] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 2.798 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:26:4826] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.615 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:32:4832] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.896 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:38:4838] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.348 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:44:4844] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.416 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:50:4850] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.569 ms[39m
+[35m[39m 
+
+[2022-02-27 12:48:56:4856] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.364 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:02:492] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.347 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:08:498] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.357 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:14:4914] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.876 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:20:4920] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.478 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:26:4926] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.450 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:32:4932] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.324 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:38:4938] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.284 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:44:4944] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.244 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:50:4950] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.378 ms[39m
+[35m[39m 
+
+[2022-02-27 12:49:56:4956] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.837 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:02:502] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.215 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:08:508] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.212 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:14:5014] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.223 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:20:5020] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.308 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:26:5026] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.226 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:32:5032] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.332 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:38:5038] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.822 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:44:5044] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.535 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:50:5050] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.213 ms[39m
+[35m[39m 
+
+[2022-02-27 12:50:57:5057] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:50:59:5059] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:50:59:5059] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: Generating schema error[39m 
+
+[2022-02-27 12:50:59:5059] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 404 147 - 3.553 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:05:515] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.932 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:11:5111] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.333 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:17:5117] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.238 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:24:5124] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:51:25:5125] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:51:25:5125] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 21.419 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:28:5128] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 4.904 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:31:5131] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 3.093 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:34:5134] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 3.441 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:34:5134] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:51:34:5134] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 2358 - 368.414 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:37:5137] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 6.411 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:40:5140] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 15.189 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:43:5143] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 14.106 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:46:5146] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 6.715 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:46:5146] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:51:46:5146] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 709 - 106.338 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:49:5149] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 4.949 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:52:5152] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 3.389 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:55:5155] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 22.434 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:57:5157] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 8.137 ms[39m
+[35m[39m 
+
+[2022-02-27 12:51:59:5159] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 3.921 ms[39m
+[35m[39m 
+
+[2022-02-27 12:52:32:5232] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:52:33:5233] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:52:36:5236] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28665 - 22.090 ms[39m
+[35m[39m 
+
+[2022-02-27 12:52:50:5250] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 12:52:50:5250] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 260 - 352.760 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:29:5329] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:53:31:5331] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:53:31:5331] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 19.303 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:34:5334] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 11.528 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:36:5336] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 2.957 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:38:5338] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 4.586 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:40:5340] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 2.694 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:40:5340] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 2.521 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:42:5342] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 2.731 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:44:5344] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 5.293 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:46:5346] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 8.371 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:48:5348] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 14.682 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:50:5350] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 11.330 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:52:5352] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 3.241 ms[39m
+[35m[39m 
+
+[2022-02-27 12:53:54:5354] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 18.776 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:06:546] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 12:54:07:547] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 12:54:07:547] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 18.417 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:07:547] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 4.766 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:09:549] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 2.961 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:11:5411] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 12.020 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:13:5413] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 11.544 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:15:5415] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 6.333 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:17:5417] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 11.478 ms[39m
+[35m[39m 
+
+[2022-02-27 12:54:19:5419] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 28663 - 2.939 ms[39m
+[35m[39m 
+
+[2022-02-27 12:57:43:5743] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 6.282 ms[39m
+[35m[39m 
+
+[2022-02-27 12:57:45:5745] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 9.316 ms[39m
+[35m[39m 
+
+[2022-02-27 12:57:47:5747] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 4.347 ms[39m
+[35m[39m 
+
+[2022-02-27 12:57:49:5749] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 6.513 ms[39m
+[35m[39m 
+
+[2022-02-27 12:58:56:5856] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 9.187 ms[39m
+[35m[39m 
+
+[2022-02-27 12:58:58:5858] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 4.197 ms[39m
+[35m[39m 
+
+[2022-02-27 12:59:00:590] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 8.635 ms[39m
+[35m[39m 
+
+[2022-02-27 12:59:02:592] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 7.252 ms[39m
+[35m[39m 
+
+[2022-02-27 12:59:04:594] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 8.022 ms[39m
+[35m[39m 
+
+[2022-02-27 12:59:06:596] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 18.252 ms[39m
+[35m[39m 
+
+[2022-02-27 13:09:35:935] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:09:36:936] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:12:28:1228] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:12:30:1230] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:25:57:2557] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:25:58:2558] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:29:30:2930] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:29:32:2932] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:30:58:3058] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:30:59:3059] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:41:13:4113] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:41:15:4115] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:42:08:428] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:42:09:429] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:42:32:4232] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:42:33:4233] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:43:03:433] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 13:43:04:434] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 13:43:10:4310] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 18.826 ms[39m
+[35m[39m 
+
+[2022-02-27 13:43:12:4312] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 4.404 ms[39m
+[35m[39m 
+
+[2022-02-27 13:43:14:4314] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 3.036 ms[39m
+[35m[39m 
+
+[2022-02-27 13:43:16:4316] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 3.395 ms[39m
+[35m[39m 
+
+[2022-02-27 13:43:18:4318] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 4.421 ms[39m
+[35m[39m 
+
+[2022-02-27 13:43:20:4320] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 28663 - 12.858 ms[39m
+[35m[39m 
+

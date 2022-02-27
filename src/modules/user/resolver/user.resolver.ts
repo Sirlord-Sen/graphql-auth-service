@@ -33,33 +33,36 @@ export class UserResolver{
     }
 
 
-    @Mutation(() => Boolean)
-    async singleUpload(
+    @Mutation(() => CreateUserDto)
+    async createUser(
         @Arg("file", () => GraphQLUpload) {createReadStream, mimetype} : FileUpload,
         @Arg("body") data: SignUpInput
         ) {
-        const profilePicture = `${uuidv4()}-${Date.now()}.${mimetype.split('/')[1]}`
-        console.log(data)
+        const picture = `${uuidv4()}-${Date.now()}.${mimetype.split('/')[1]}`
         createReadStream()
-            .pipe(createWriteStream(join(resolve("./public"), profilePicture)))
+            .pipe(createWriteStream(join(resolve("./public"), picture)))
             .on("finish", () => { Logger.info('Images saved in Public Dir') })
 
-        return true
+        const { username, name, email, password, bio, phone } = data
+        const user = {username, name, email, password}
+        const profile = { bio, phone, picture }
+
+        const { newProfile, newUser } = await this.userService.register(user, profile)
+        return { message: "User Created", user: newUser, profile: newProfile}
     }
 
-    @Mutation(() => CreateUserDto)
-    async createUser(@Arg("body") body: SignUpInput){
-        const user = await this.userService.register(body)
-        return { message: "User Created", user}
-    }
 
     @Mutation(() => UpdateUserDto)
     @UseMiddleware(AuthMiddleware)
     async updateUser(@Arg('body') body: SignUpInput, @Ctx() ctx: Context<ExpressContext>) {
         const { userId } = ctx.req.currentUser
-        const user = await this.userService.update({id: userId}, body)
-        return { message: "User Updated", user}
+
+        const { username, name, email, password, bio, phone } = body
+        const user = {username, name, email, password}
+        const profile = { bio, phone }
+
+        const {updatedUser, updatedProfile} = await this.userService.update({id: userId}, user, profile)
+        return { message: "User Updated", user: updatedUser, profile: updatedProfile}
     }    
     
 } 
-'{"query":"mutation SingleUpload($file: Upload!) {\n  singleUpload(\n    body: {\n      username: \"Lordem\",\n      email: \"lodwaf12@gmail.com\",\n      phone:\"+233203655775\",\n      name: \"Sir-Lord Wiafe\"\n      bio: \"I am a very hardworking young man\",\n      password: \"I love God\"\n    },\n    file: $file\n  )\n}\n"}'
