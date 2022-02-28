@@ -32,9 +32,9 @@ export class AuthResolver{
             os: useragent?.os,
             browser: useragent?.browser
         }
-        const user = await this.authService.login(body)
+        const { user, profile } = await this.authService.login(body)
         const tokens = await this.tokenService.getTokens(user, userAgent)
-        return { message: "Success" , user, tokens}
+        return { message: "Login Successful" , user, profile, tokens}
     }
 
     @Mutation(() => LogoutDto)
@@ -42,6 +42,7 @@ export class AuthResolver{
     async logout(@Ctx() ctx: Context<ExpressContext>) {
         const { useragent } = ctx.req
         const { userId } = ctx.req.currentUser
+        console.log(userId)
         const userAgent = {
             os: useragent?.os,
             browser: useragent?.browser,
@@ -51,11 +52,11 @@ export class AuthResolver{
         return { message: "Logout Successful" }
     }    
 
-    @Mutation(() => RefreshTokenDto)
-    async refreshToken(@Arg('body') body: RefreshTokenInput){
-        const refreshToken = body.refreshToken
-        const tokens = await this.authService.refreshToken({refreshToken: refreshToken})
-        return  { tokens }
-    }
+    // @Mutation(() => RefreshTokenDto)
+    // async refreshToken(@Arg('body') body: RefreshTokenInput){
+    //     const refreshToken = body.refreshToken
+    //     const tokens = await this.authService.refreshToken({refreshToken: refreshToken})
+    //     return  { tokens }
+    // }
     
 } 

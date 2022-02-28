@@ -1,8 +1,0 @@
-[2022-02-24 23:50:04:504] [31merror[39m: [31mcolumn "profilePicture" of relation "users" contains null values[39m 
-
-[2022-02-24 23:51:46:5146] [31merror[39m: [31mcolumn "profilePicture" of relation "users" contains null values[39m 
-
-[2022-02-27 11:55:31:5531] [31merror[39m: [31mYou need to provide explicit type for ProfileEntity#user ![39m 
-
-[2022-02-27 11:55:44:5544] [31merror[39m: [31mYou need to provide explicit type for ProfileEntity#user ![39m 
-

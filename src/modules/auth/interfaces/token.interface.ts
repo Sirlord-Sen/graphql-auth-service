@@ -42,8 +42,8 @@ export interface IRefreshToken{
 }
 
 export interface IAccessTokenRequest{
-    userId: string,
-    email: string
+    userId: string | undefined,
+    email: string | undefined
 }
 
 export interface IAccessTokenResponse{
@@ -57,7 +57,7 @@ export interface IRefreshTokenResponse{
 }
 
 export interface IRefreshTokenRequest {
-    userId: string
+    userId: string | undefined
 }
 
 export interface FullRefreshToken{

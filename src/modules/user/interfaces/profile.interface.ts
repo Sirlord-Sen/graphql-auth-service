@@ -1,5 +1,5 @@
 export interface IProfile {
     bio?: string 
-    phone: string
+    phone?: string
     picture?: string
 }

@@ -20,18 +20,19 @@ export default class UserEntity extends BaseEntity{
     @PrimaryGeneratedColumn('uuid')
     id: string
 
-    @Field()
-    @Column()
-    username: string
+    @Field({nullable: true})
+    @Column({nullable: true})
+    username?: string
 
-    @Field()
-    @Column()
-    name: string
+    @Field({nullable: true})
+    @Column({nullable: true})
+    name?: string
 
     @Field()
     @Column()
     email: string
 
+    @Field({nullable: true})
     @Column()
     password?: string
 

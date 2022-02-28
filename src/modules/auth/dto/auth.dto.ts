@@ -2,6 +2,7 @@ import { Field, ObjectType } from "type-graphql";
 
 import { ITokenResponse } from "@auth/interfaces/token.interface";
 import UserEntity from "@user/entity/user.entity";
+import ProfileEntity from "@user/entity/profile.entity";
 
 @ObjectType()
 export class LoginDto{
@@ -10,6 +11,9 @@ export class LoginDto{
 
     @Field()
     user: UserEntity
+
+    @Field({nullable: true})
+    profile?: ProfileEntity
 
     @Field()
     tokens: ITokenResponse

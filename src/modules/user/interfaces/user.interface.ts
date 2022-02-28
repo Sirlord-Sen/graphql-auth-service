@@ -12,10 +12,10 @@ export interface User {
 }
 
 export interface IUser {
-    username: string
-    email: string
-    password: string
-    name: string
+    username: string | undefined
+    email: string | undefined
+    password: string | undefined
+    name: string | undefined
 }
 
 export interface saveUser{

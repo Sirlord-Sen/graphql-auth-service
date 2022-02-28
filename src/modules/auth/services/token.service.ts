@@ -76,8 +76,6 @@ export default class TokenService {
             }
         }))[0]
 
-        console.log(lastSignIn)
-
         if(lastSignIn) return lastSignIn
         return undefined
     }
@@ -112,7 +110,7 @@ export default class TokenService {
         return { refreshToken, lastSignIn }
     }
 
-    async getTokens(user: ITokenRequest, agent: UserAgent):Promise<ITokenResponse>{
+    async getTokens(user: Partial<UserEntity>, agent: UserAgent):Promise<ITokenResponse>{
         const { id, email } = user;
         const [{accessToken, expiredAt}, {refreshToken, lastSignIn}] = await Promise.all([
             this.generateAccessToken({ email: email, userId: id }),
@@ -126,7 +124,7 @@ export default class TokenService {
         await this.refreshTokenRepository.updateRefreshToken(query, body)
     }
 
-    async resolveRefreshToken(token:string): Promise<IResolveRefreshToken> {
+    async resolveRefreshToken(token:string): Promise<Partial<UserEntity>> {
         const payload = await this.decodeRefreshToken(token);
         const refreshTokenFromDB = await this.getRefreshTokenFromPayload(payload);
 
@@ -147,13 +145,14 @@ export default class TokenService {
         return payload
     }
     
-    private getRefreshTokenFromPayload(payload: RefreshTokenPayload): Promise<RefreshTokenEntity>{
+    private async getRefreshTokenFromPayload(payload: RefreshTokenPayload): Promise<RefreshTokenEntity>{
         const { jti, sub } = payload;
-        return this.refreshTokenRepository.findOneToken({ userId: sub, jti });
+        return await this.refreshTokenRepository.findOneToken({ userId: sub, jti });
     }
     
-    private getUserFromRefreshTokenPayload(payload: RefreshTokenPayload): Promise<UserEntity> {
+    private async getUserFromRefreshTokenPayload(payload: RefreshTokenPayload): Promise<Partial<UserEntity>> {
         const { sub } = payload;    
-        return this.userService.findOne({ id: sub });
+        const user = await this.userService.findOne({ id: sub });
+        return user.user
     }
 }

@@ -16,13 +16,13 @@ export class ProfileRepository extends Repository<ProfileEntity>{
     }
 
     // Update User Resource
-    async updateProfile(query: any, body: IProfile): Promise<void>{
+    async updateProfile(query: any, body: Partial<IProfile>): Promise<ProfileEntity>{
         try{ 
             // finds one or fails if not available
             const profile = await this.findOneOrFail({ where: query})
             // merge found fields with existing fields
             this.merge(profile, body)
-            await this.save(profile)
+            return await this.save(profile)
         }
         catch(err){ throw err }
 

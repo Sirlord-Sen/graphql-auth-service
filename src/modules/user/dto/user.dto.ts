@@ -11,11 +11,20 @@ export class CreateUserDto{
 
     @Field()
     user: UserEntity
+}
+
+@ObjectType()
+export class uploadPhotoDto{
+    @Field()
+    message: string
 
     @Field()
-    profile: ProfileEntity
+    photo: string
 }
 
 
 @ObjectType()
-export class UpdateUserDto extends CreateUserDto{}
+export class UpdateUserDto extends CreateUserDto{
+    @Field()
+    profile: ProfileEntity
+}

@@ -17,17 +17,17 @@ export default class ProfileEntity extends BaseEntity{
     @PrimaryGeneratedColumn('uuid')
     id: string
 
-    @Field()
-    @Column()
+    @Field({nullable: true})
+    @Column({nullable: true})
     bio?: string
 
-    @Field()
-    @Column()
-    phone: string
+    @Field({nullable: true})
+    @Column({nullable: true})
+    phone?: string
 
-    @Field()
-    @Column()
-    picture: string
+    @Field({nullable: true})
+    @Column({nullable: true})
+    picture?: string
 
     @OneToOne(() => UserEntity, user => user.profile)
     user: UserEntity;

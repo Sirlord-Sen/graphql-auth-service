@@ -1,4 +1,5 @@
-import { FullUser, saveUser, UpdateUser } from '@user/interfaces/user.interface';
+import ProfileEntity from '@user/entity/profile.entity';
+import { FullUser, IUser, saveUser, UpdateUser } from '@user/interfaces/user.interface';
 import { EntityRepository, getCustomRepository, Repository } from 'typeorm'
 
 import UserEntity from '../entity/user.entity'
@@ -12,13 +13,13 @@ export class UserRepository extends Repository<UserEntity>{
         this.profileRepository = getCustomRepository(ProfileRepository)
     }
     // Create User Resource into Database
-    async createUser(body: saveUser): Promise<UserEntity> {
+    async createUser(user: Partial<IUser>, profile: ProfileEntity): Promise<UserEntity> {
         try {
-            const user = this.create(body.user);
-            user.profile = body.profile
+            const newUser = this.create(user);
+            newUser.profile = profile
             // save db instance
-            await this.save(user);
-            return user;
+            await this.save(newUser);
+            return newUser;
         } 
         catch (err) { throw err }
     }
@@ -27,7 +28,7 @@ export class UserRepository extends Repository<UserEntity>{
     async updateUser(query: Partial<FullUser>, body: UpdateUser): Promise<UserEntity>{
         try{ 
             // finds one or fails if not available
-            const user = await this.findOneOrFail({ where: query})
+            const user = await this.findOneOrFail({ where: query, relations: ["profile"] })
             const id = user.profile?.id
             await this.profileRepository.update({id: id}, body.profile)
             // merge found fields with existing fields
@@ -36,6 +37,5 @@ export class UserRepository extends Repository<UserEntity>{
             return user
         }
         catch(err){ throw err }
-
     }
 }
