@@ -69,9 +69,18 @@ export class UserResolver{
         ) {
             const { userId } = ctx.req.currentUser
 
-            const { username, name, email, password, bio, phone } = body
+            let { username, name, email, password, bio, phone } = body
+           
+            if(username === "undefined") username = undefined
+            if(username === "undefined") name = undefined
+            if(username === "undefined") email = undefined
+            if(username === "undefined") password = undefined
+            if(username === "undefined") bio = undefined
+            if(username === "undefined") phone = undefined
+
             const user = {username, name, email, password}
             const profile = { bio, phone }
+            
 
             const {updatedUser, updatedProfile} = await this.userService.update({id: userId}, user, profile)
             return { message: "User Updated", user: updatedUser, profile: updatedProfile}
