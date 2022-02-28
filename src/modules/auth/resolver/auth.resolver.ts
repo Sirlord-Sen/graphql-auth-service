@@ -12,8 +12,7 @@ import {
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import AuthService from '@auth/services/auth.service';
 import TokenService from '@auth/services/token.service';
-import { RefreshTokenInput } from '@auth/inputs/token.input';
-import { LoginDto, LogoutDto, RefreshTokenDto } from '@auth/dto/auth.dto';
+import { LoginDto, LogoutDto } from '@auth/dto/auth.dto';
 import { LoginInput } from '@auth/inputs/auth.input';
 
 @Service()
@@ -26,7 +25,10 @@ export class AuthResolver{
     {}
 
     @Mutation(() => LoginDto)
-    async login(@Arg("body") body: LoginInput, @Ctx() ctx: Context<ExpressContext>){
+    async login(
+        @Arg("body") body: LoginInput, 
+        @Ctx() ctx: Context<ExpressContext>
+        ){
         const { useragent } = ctx.req
         const userAgent = {
             os: useragent?.os,
@@ -42,7 +44,6 @@ export class AuthResolver{
     async logout(@Ctx() ctx: Context<ExpressContext>) {
         const { useragent } = ctx.req
         const { userId } = ctx.req.currentUser
-        console.log(userId)
         const userAgent = {
             os: useragent?.os,
             browser: useragent?.browser,

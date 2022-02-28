@@ -2,8 +2,6 @@ import { Service } from 'typedi'
 
 import UserService from "@user/services/user.service";
 import TokenService from "./token.service";
-import { IRefreshToken, ITokenResponse, RefreshTokenResponse } from "../interfaces/token.interface";
-import { TokenType } from "@utils/util-types";
 import UserEntity from "@user/entity/user.entity";
 import { ILogin, ILogout } from "@auth/interfaces/auth.interface";
 import ProfileEntity from '@user/entity/profile.entity';

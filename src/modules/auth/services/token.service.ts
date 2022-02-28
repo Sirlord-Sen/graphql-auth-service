@@ -19,8 +19,6 @@ import {
     IAccessTokenResponse, 
     IRefreshTokenRequest, 
     IRefreshTokenResponse, 
-    IResolveRefreshToken, 
-    ITokenRequest, 
     ITokenResponse, 
     RefreshTokenPayload, 
     UserAgent 
