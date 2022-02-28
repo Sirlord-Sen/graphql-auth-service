@@ -19,6 +19,7 @@ import UserService from '@user/services/user.service';
 import { SignUpInput, UpdateInput } from '@user/inputs/user.input';
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import { CreateUserDto, UpdateUserDto, uploadPhotoDto } from '@user/dto/user.dto';
+import { UpdateUserClean } from "@helpers//";
 
 @Service()
 @Resolver()
@@ -67,21 +68,8 @@ export class UserResolver{
         @Arg('body') body: UpdateInput, 
         @Ctx() ctx: Context<ExpressContext>
         ) {
-            const { userId } = ctx.req.currentUser
-
-            let { username, name, email, password, bio, phone } = body
-           
-            if(username === "undefined") username = undefined
-            if(name === "undefined") name = undefined
-            if(email === "undefined") email = undefined
-            if(password === "undefined") password = undefined
-            if(bio === "undefined") bio = undefined
-            if(phone === "undefined") phone = undefined
-
-            const user = {username, name, email, password}
-            const profile = { bio, phone }
-            
-
+            const { userId } = ctx.req.currentUser            
+            const { user, profile } = UpdateUserClean(body)
             const {updatedUser, updatedProfile} = await this.userService.update({id: userId}, user, profile)
             return { message: "User Updated", user: updatedUser, profile: updatedProfile}
     }    
