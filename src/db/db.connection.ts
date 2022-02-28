@@ -9,7 +9,7 @@ import { Logger } from '@utils/logger.util'
 
 // const { type ,username, password, database, synchronize, host, port } = DBConfig
 class Connection{
-    config: any
+    config: ConnectionOptions
     constructor(){
         this.config = {
             // type,
@@ -20,6 +20,7 @@ class Connection{
             // database,
             // synchronize,
             type: 'postgres',
+            synchronize: true,
             url: process.env.DATABASE_URL,
             ssl: true,
             extra: {
