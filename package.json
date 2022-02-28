@@ -4,8 +4,8 @@
   "description": "This is the auth app exercise for backend developer recruitment",
   "main": ".dist/main.js",
   "scripts": {
-    "build": "rimraf ./dist && tsc",
-    "postinstall": "tsc",
+    "build": "rimraf ./dist && npx tsc",
+    "postinstall": "npx --package=typescript -- tsc",
     "start:dev": "nodemon",
     "start:prod": "npm run build && ts-node -r tsconfig-paths/register ./src/main.ts",
     "lint": "eslint \"src/**/*.ts\" --fix"
