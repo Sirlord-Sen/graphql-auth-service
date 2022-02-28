@@ -16,3 +16,9 @@
 
 [2022-02-27 23:21:55:2155] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
 
+[2022-02-27 23:36:11:3611] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 23:37:08:378] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 23:38:00:380] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
