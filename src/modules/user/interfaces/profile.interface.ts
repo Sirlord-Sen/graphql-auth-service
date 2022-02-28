@@ -1,5 +1,5 @@
 export interface IProfile {
-    bio?: string 
-    phone?: string
-    picture?: string
+    bio: string | undefined 
+    phone: string | undefined
+    picture: string | undefined
 }

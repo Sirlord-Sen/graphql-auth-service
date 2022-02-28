@@ -28,9 +28,10 @@ export class UserRepository extends Repository<UserEntity>{
     async updateUser(query: Partial<FullUser>, body: UpdateUser): Promise<UserEntity>{
         try{ 
             // finds one or fails if not available
+            const findUser = await this.findOneOrFail({ where: query, relations: ["profile"] })
+            const id = findUser.profile?.id
+            await this.profileRepository.updateProfile({id: id}, body.profile)
             const user = await this.findOneOrFail({ where: query, relations: ["profile"] })
-            const id = user.profile?.id
-            await this.profileRepository.update({id: id}, body.profile)
             // merge found fields with existing fields
             this.merge(user, body.user)
             await this.save(user)

@@ -42,8 +42,8 @@ export default class UserService {
 
     async update(
         query: Partial<FullUser>, 
-        user: IUser, 
-        profile: IProfile): Promise<{
+        user: Partial<IUser>, 
+        profile: Partial<IProfile>): Promise<{
             updatedUser: Partial<UserEntity>, 
             updatedProfile: ProfileEntity | undefined
         }> {
