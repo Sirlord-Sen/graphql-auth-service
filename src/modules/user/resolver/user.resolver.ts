@@ -72,11 +72,11 @@ export class UserResolver{
             let { username, name, email, password, bio, phone } = body
            
             if(username === "undefined") username = undefined
-            if(username === "undefined") name = undefined
-            if(username === "undefined") email = undefined
-            if(username === "undefined") password = undefined
-            if(username === "undefined") bio = undefined
-            if(username === "undefined") phone = undefined
+            if(name === "undefined") name = undefined
+            if(email === "undefined") email = undefined
+            if(password === "undefined") password = undefined
+            if(bio === "undefined") bio = undefined
+            if(phone === "undefined") phone = undefined
 
             const user = {username, name, email, password}
             const profile = { bio, phone }
