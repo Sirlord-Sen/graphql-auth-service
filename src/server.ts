@@ -12,6 +12,8 @@ import { graphqlUploadExpress } from 'graphql-upload';
 import morganMiddleware  from '@middlewares/morgan.middleware';
 import { Logger }  from '@utils/logger.util';
 import { parsedEnv } from '@config//';
+import { join, resolve } from 'path';
+import { existsSync } from 'fs';
 
 export default class ExpressServer {
     public app: Application;
@@ -39,6 +41,13 @@ export default class ExpressServer {
         this.app.listen(port, () => {
             Logger.info(`Server Started! Http: http://localhost:${port}`)
         });
+        this.app.get('/public/:filename', (req, res) => {
+            const file = join(resolve("./public"), req.params.filename)
+            if(existsSync(file)){
+                res.sendFile(file)
+            }
+            else res.status(400).json({error: 'No file'})
+        })
     }
 
     // Apollo GraphQL Server

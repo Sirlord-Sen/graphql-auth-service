@@ -1,0 +1,46 @@
+[2022-02-27 19:07:08:78] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:07:09:79] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:07:09:79] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 21.922 ms[39m
+[35m[39m 
+
+[2022-02-27 19:08:05:85] [35mhttp[39m: [35m::1 - GET /public/:123214123 HTTP/1.1 - - - - ms[39m
+[35m[39m 
+
+[2022-02-27 19:08:14:814] [35mhttp[39m: [35m::1 - GET /public/123214123 HTTP/1.1 - - - - ms[39m
+[35m[39m 
+
+[2022-02-27 19:08:34:834] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:08:35:835] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:08:51:851] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 59 - 378.673 ms[39m
+[35m[39m 
+
+[2022-02-27 19:09:05:95] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 1192 - 124.952 ms[39m
+[35m[39m 
+
+[2022-02-27 19:10:08:108] [32minfo[39m: [32mImages saved in Public Dir[39m 
+
+[2022-02-27 19:10:08:108] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 119 - 98.810 ms[39m
+[35m[39m 
+
+[2022-02-27 19:12:29:1229] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:12:31:1231] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:12:37:1237] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:12:38:1238] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:20:08:208] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 23.526 ms[39m
+[35m[39m 
+
+[2022-02-27 19:22:11:2211] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:22:12:2212] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:22:18:2218] [35mhttp[39m: [35m::1 - GET /public/041ab65b-d9e0-4505-aa3e-6894dd1d21a3-1646010608552.jpeg HTTP/1.1 200 96107 - 6.702 ms[39m
+[35m[39m 
+
