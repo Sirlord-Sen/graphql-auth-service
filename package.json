@@ -4,7 +4,7 @@
   "description": "This is the auth app exercise for backend developer recruitment",
   "main": ".dist/main.js",
   "scripts": {
-    "tsc": "tsc",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "build": "rimraf ./dist && tsc",
     "postinstall": "npm run tsc",
     "start:dev": "nodemon",
