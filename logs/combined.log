@@ -233,3 +233,21 @@
 [2022-02-27 23:38:08:388] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 30.509 ms[39m
 [35m[39m 
 
+[2022-02-28 00:09:37:937] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-28 00:09:38:938] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-28 00:09:38:938] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 23.757 ms[39m
+[35m[39m 
+
+[2022-02-28 00:13:45:1345] [31merror[39m: [31mThe server does not support SSL connections[39m 
+
+[2022-02-28 00:13:47:1347] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-28 00:14:12:1412] [31merror[39m: [31mThe server does not support SSL connections[39m 
+
+[2022-02-28 00:14:14:1414] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-28 00:14:14:1414] [35mhttp[39m: [35m::ffff:127.0.0.1 - POST /graphql HTTP/1.1 200 27751 - 21.246 ms[39m
+[35m[39m 
+

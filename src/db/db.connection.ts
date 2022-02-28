@@ -19,6 +19,7 @@ class Connection{
             // password,
             // database,
             // synchronize,
+            type: 'postgres',
             url: process.env.DATABASE_URL,
             ssl: true,
             extra: {

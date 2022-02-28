@@ -22,3 +22,9 @@
 
 [2022-02-27 23:38:00:380] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
 
+[2022-02-28 00:09:37:937] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-28 00:13:45:1345] [31merror[39m: [31mThe server does not support SSL connections[39m 
+
+[2022-02-28 00:14:12:1412] [31merror[39m: [31mThe server does not support SSL connections[39m 
+
