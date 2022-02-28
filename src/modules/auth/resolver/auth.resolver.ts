@@ -12,8 +12,9 @@ import {
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import AuthService from '@auth/services/auth.service';
 import TokenService from '@auth/services/token.service';
-import { LoginDto, LogoutDto } from '@auth/dto/auth.dto';
+import { LoginDto, LogoutDto, RefreshTokenDto } from '@auth/dto/auth.dto';
 import { LoginInput } from '@auth/inputs/auth.input';
+import { RefreshTokenInput } from '@auth/inputs/token.input';
 
 @Service()
 @Resolver()
@@ -53,11 +54,11 @@ export class AuthResolver{
         return { message: "Logout Successful" }
     }    
 
-    // @Mutation(() => RefreshTokenDto)
-    // async refreshToken(@Arg('body') body: RefreshTokenInput){
-    //     const refreshToken = body.refreshToken
-    //     const tokens = await this.authService.refreshToken({refreshToken: refreshToken})
-    //     return  { tokens }
-    // }
+    @Mutation(() => RefreshTokenDto)
+    async refreshToken(@Arg('body') body: RefreshTokenInput){
+        const refreshToken = body.refreshToken
+        const tokens = await this.authService.refreshToken({refreshToken: refreshToken})
+        return  { tokens }
+    }
     
 } 

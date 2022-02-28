@@ -5,12 +5,14 @@ import TokenService from "./token.service";
 import UserEntity from "@user/entity/user.entity";
 import { ILogin, ILogout } from "@auth/interfaces/auth.interface";
 import ProfileEntity from '@user/entity/profile.entity';
+import { IRefreshToken, RefreshTokenResponse } from '@auth/interfaces/token.interface';
+import { TokenType } from '@utils/util-types';
 
 @Service()
 export default class AuthService {
 
     constructor(
-        private userService: UserService ,
+        private userService: UserService,
         private tokenService: TokenService
     ){
     }
@@ -30,10 +32,10 @@ export default class AuthService {
         await this.tokenService.update({...body, isRevoked: false }, {isRevoked: true });
     }
 
-    // async refreshToken(body: IRefreshToken): Promise<RefreshTokenResponse>{
-    //     let { id, email }  = await this.tokenService.resolveRefreshToken(body.refreshToken)
-    //     const { accessToken, expiredAt } = await this.tokenService.generateAccessToken({userId: id, email })
-    //     const tokens = { tokenType: TokenType.BEARER , accessToken, expiredAt, refreshToken: body.refreshToken }
-    //     return  tokens ;
-    // }
+    async refreshToken(body: IRefreshToken): Promise<RefreshTokenResponse>{
+        let { id, email }  = await this.tokenService.resolveRefreshToken(body.refreshToken)
+        const { accessToken, expiredAt } = await this.tokenService.generateAccessToken({userId: id, email })
+        const tokens = { tokenType: TokenType.BEARER , accessToken, expiredAt, refreshToken: body.refreshToken }
+        return  tokens ;
+    }
 }
