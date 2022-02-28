@@ -70,6 +70,7 @@ export class UserResolver{
         ) {
             const { userId } = ctx.req.currentUser            
             const { user, profile } = UpdateUserClean(body)
+            console.log(user, profile)
             const {updatedUser, updatedProfile} = await this.userService.update({id: userId}, user, profile)
             return { message: "User Updated", user: updatedUser, profile: updatedProfile}
     }    
