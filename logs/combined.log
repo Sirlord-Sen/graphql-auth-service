@@ -44,3 +44,135 @@
 [2022-02-27 19:22:18:2218] [35mhttp[39m: [35m::1 - GET /public/041ab65b-d9e0-4505-aa3e-6894dd1d21a3-1646010608552.jpeg HTTP/1.1 200 96107 - 6.702 ms[39m
 [35m[39m 
 
+[2022-02-27 19:48:00:480] [32minfo[39m: [32mDatabase Connected!!![39m 
+
+[2022-02-27 19:48:01:481] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 19:48:05:485] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 18.736 ms[39m
+[35m[39m 
+
+[2022-02-27 20:04:42:442] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:04:44:444] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 20:04:46:446] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 17.829 ms[39m
+[35m[39m 
+
+[2022-02-27 20:04:49:449] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 4.510 ms[39m
+[35m[39m 
+
+[2022-02-27 20:04:52:452] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 6.219 ms[39m
+[35m[39m 
+
+[2022-02-27 20:04:55:455] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 8.634 ms[39m
+[35m[39m 
+
+[2022-02-27 20:04:58:458] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 4.253 ms[39m
+[35m[39m 
+
+[2022-02-27 20:05:01:51] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 6.687 ms[39m
+[35m[39m 
+
+[2022-02-27 20:05:04:54] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 6.939 ms[39m
+[35m[39m 
+
+[2022-02-27 20:05:07:57] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 6.773 ms[39m
+[35m[39m 
+
+[2022-02-27 20:05:10:510] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 5.415 ms[39m
+[35m[39m 
+
+[2022-02-27 20:10:14:1014] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:10:15:1015] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 20:24:33:2433] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:24:35:2435] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 20:24:36:2436] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 20.009 ms[39m
+[35m[39m 
+
+[2022-02-27 20:24:39:2439] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 200 27751 - 4.824 ms[39m
+[35m[39m 
+
+[2022-02-27 20:48:42:4842] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:48:43:4843] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 20:48:43:4843] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: ⨯ Unable to compile TypeScript:[39m
+[33m[96msrc/middlewares/auth.middleware.ts[0m:[93m7[0m:[93m27[0m - [91merror[0m[90m TS2306: [0mFile 'C:/Users/Sir-Lord/Documents/GitHub/daba-auth-backend-service/src/config/index.ts' is not a module.[39m
+
+[33m[7m7[0m import { JwtConfig } from "@config//";[39m
+[33m[7m [0m [91m                          ~~~~~~~~~~~[0m[39m
+[33m[39m 
+
+[2022-02-27 20:48:44:4844] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 3.192 ms[39m
+[35m[39m 
+
+[2022-02-27 20:48:50:4850] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.863 ms[39m
+[35m[39m 
+
+[2022-02-27 20:48:56:4856] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.990 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:02:492] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 3.467 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:08:498] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.267 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:14:4914] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.412 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:20:4920] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.661 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:26:4926] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.294 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:32:4932] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.339 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:38:4938] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.558 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:44:4944] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.964 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:50:4950] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.292 ms[39m
+[35m[39m 
+
+[2022-02-27 20:49:56:4956] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.173 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:06:506] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:50:06:506] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+
+[2022-02-27 20:50:06:506] [33mwarn[39m: [33mPossibly Unhandled Rejection Reason: ⨯ Unable to compile TypeScript:[39m
+[33m[96msrc/middlewares/auth.middleware.ts[0m:[93m7[0m:[93m27[0m - [91merror[0m[90m TS2306: [0mFile 'C:/Users/Sir-Lord/Documents/GitHub/daba-auth-backend-service/src/config/index.ts' is not a module.[39m
+
+[33m[7m7[0m import { JwtConfig } from "@config//";[39m
+[33m[7m [0m [91m                          ~~~~~~~~~~~[0m[39m
+[33m[39m 
+
+[2022-02-27 20:50:12:5012] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 3.332 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:18:5018] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.871 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:24:5024] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 1.357 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:30:5030] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.497 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:36:5036] [35mhttp[39m: [35m::1 - POST /graphql HTTP/1.1 404 147 - 0.251 ms[39m
+[35m[39m 
+
+[2022-02-27 20:50:45:5045] [31merror[39m: [31mWrong driver: "undefined" given. Supported drivers are: "aurora-data-api", "aurora-data-api-pg", "better-sqlite3", "capacitor", "cockroachdb", "cordova", "expo", "mariadb", "mongodb", "mssql", "mysql", "nativescript", "oracle", "postgres", "react-native", "sap", "sqlite", "sqljs".[39m 
+
+[2022-02-27 20:50:47:5047] [32minfo[39m: [32mServer Started! Http: http://localhost:4000[39m 
+

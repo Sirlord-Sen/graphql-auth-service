@@ -4,8 +4,9 @@ import { ExpressContext } from "apollo-server-express/dist/ApolloServer";
 import { Service } from "typedi";
 
 import JWTService from "@providers/jwt/jwt.service";
-import { JwtConfig } from "@config//";
+// import { JwtConfig } from "@config//";
 import { TokenHelper } from "@helpers//";
+import { readFileSync } from 'fs';
 
 
 @Service()
@@ -17,8 +18,10 @@ export class AuthMiddleware implements MiddlewareInterface<ExpressContext>{
         const accessToken = TokenHelper.getTokenFromHeader(req.headers)
         if(accessToken) {
             try {
+                const publicKeyFile = String(process.env.PUBLIC_KEY_FILE)
+                const publicAccessKey = readFileSync(publicKeyFile)
                 
-                const publicKey = JwtConfig.publicAccessKey
+                const publicKey = publicAccessKey
 
                 const verifyOptions: VerifyOptions = {
                     algorithms: ['RS256']

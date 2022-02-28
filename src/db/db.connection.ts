@@ -5,23 +5,27 @@ import {
 } from 'typeorm'
 
 import { Logger } from '@utils/logger.util'
-import { DBConfig } from '@config//'
+// import { DBConfig } from '@config//'
 
-const { type ,username, password, database, synchronize, host, port } = DBConfig
-
+// const { type ,username, password, database, synchronize, host, port } = DBConfig
 class Connection{
-    config: ConnectionOptions
+    config: any
     constructor(){
         this.config = {
-            type,
-            host,
-            port,
-            username,
-            password,
-            database,
-            synchronize,
+            // type,
+            // host,
+            // port,
+            // username,
+            // password,
+            // database,
+            // synchronize,
+            url: process.env.DATABASE_URL,
+            ssl: true,
+            extra: {
+                ssl: { rejectUnauthorized: false },
+            },
             entities: ["src/modules/**/*.entity.ts"],
-            subscribers: ["src/modules/**/*.subscriber.ts"]
+            subscribers: ["src/modules/**/*.subscriber.ts"],
         }
     }
 

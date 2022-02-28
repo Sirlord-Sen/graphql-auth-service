@@ -3,7 +3,7 @@ node_modules
 dist
 
 # configs
-.env.dev
 .env.test
 .env.prod
+.env
 

@@ -8,7 +8,7 @@ import JWTService from "@providers/jwt/jwt.service";
 import { DateHelper } from "@helpers//";
 import RefreshTokenRepository from "../repository/refreshToken.repository";
 import { TokenType } from "@utils/util-types";
-import { JwtConfig } from '@config//';
+// import { JwtConfig } from '@config//';
 import UserService from '@user/services/user.service';
 import RefreshTokenEntity from '@auth/entity/refreshToken.entity';
 import UserEntity from '@user/entity/user.entity';
@@ -25,6 +25,7 @@ import {
     RefreshTokenPayload, 
     UserAgent 
 } from '../interfaces/token.interface';
+import { readFileSync } from 'fs';
 
 @Service()
 export default class TokenService {
@@ -40,13 +41,17 @@ export default class TokenService {
 
     async generateAccessToken(body:IAccessTokenRequest, confirmTokenPassword?: string):Promise<IAccessTokenResponse>{
         const { userId } = body
+
+        const privateKeyFile = String(process.env.PRIVATE_KEY_FILE)
+        const privateAccessKey = readFileSync(privateKeyFile)
+
         const privateAccessSecret: Secret = {
-            key: JwtConfig.privateAccessKey,
-            passphrase: JwtConfig.privateAccessKeyPassphrase
+            key: privateAccessKey,
+            passphrase: String(process.env.PRIVATE_KEY_PASSPHRASE)
         }
     
         const opts: SignOptions = {
-            expiresIn: JwtConfig.accessTokenExpiration,
+            expiresIn: String(process.env.ACCESS_TOKEN_EXPIRATION),
             algorithm: 'RS256'
         }
 
@@ -58,7 +63,7 @@ export default class TokenService {
         };
         const accessToken = await this.jwtService.signAsync<JwtPayload>(payload, privateAccessSecret , opts)
 
-        const ms = DateHelper.convertToMS(JwtConfig.accessTokenExpiration)
+        const ms = DateHelper.convertToMS(String(process.env.ACCESS_TOKEN_EXPIRATION))
         const expiredAt = DateHelper.addMillisecondToDate(new Date(), ms);
 
         return {accessToken, expiredAt}
@@ -82,7 +87,7 @@ export default class TokenService {
 
     async generateRefreshToken(body:IRefreshTokenRequest, useragent: UserAgent):Promise<IRefreshTokenResponse>{
         const jti = nanoid();
-        const ms = DateHelper.convertToMS(JwtConfig.refreshTokenExpiration);
+        const ms = DateHelper.convertToMS(String(process.env.REFRESH_TOKEN_EXPIRATION));
         const expiredAt = DateHelper.addMillisecondToDate(new Date(), ms);
 
         // Only Allowing User to Login again after logout with same broswer and OS
@@ -96,7 +101,7 @@ export default class TokenService {
         const savedRefreshToken = await this.refreshTokenRepository.createRefreshToken({ ...body, ...useragent ,jti, expiredAt });
 
         const opts: SignOptions = {
-            expiresIn: JwtConfig.refreshTokenExpiration,
+            expiresIn: String(process.env.REFRESH_TOKEN_EXPIRATION),
         }
 
         const payload: JwtPayload = {
@@ -105,7 +110,7 @@ export default class TokenService {
             typ: TokenType.BEARER,
         };
 
-        const refreshToken = await this.jwtService.signAsync<JwtPayload>(payload, JwtConfig.refreshTokenSecret, opts)
+        const refreshToken = await this.jwtService.signAsync<JwtPayload>(payload, String(process.env.REFRESH_TOKEN_SECRET), opts)
 
         return { refreshToken, lastSignIn }
     }
@@ -138,7 +143,7 @@ export default class TokenService {
     private async decodeRefreshToken(token: string): Promise<RefreshTokenPayload> {
         const payload = this.jwtService.verify<RefreshTokenPayload>(
                 token,
-                JwtConfig.refreshTokenSecret,
+                String(process.env.REFRESH_TOKEN_SECRET),
             );
         const { jti, sub } = payload
         if (!jti || !sub) throw new Error('Token Malfunctioned')

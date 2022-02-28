@@ -11,9 +11,9 @@ import { graphqlUploadExpress } from 'graphql-upload';
 
 import morganMiddleware  from '@middlewares/morgan.middleware';
 import { Logger }  from '@utils/logger.util';
-import { parsedEnv } from '@config//';
 import { join, resolve } from 'path';
 import { existsSync } from 'fs';
+import { config } from 'dotenv'
 
 export default class ExpressServer {
     public app: Application;
@@ -22,6 +22,7 @@ export default class ExpressServer {
         this.app = express();
         this.middlerwares();
         this.apolloStart();
+        config()
         this.start()
     }
 
@@ -37,7 +38,7 @@ export default class ExpressServer {
 
     // Express Server
     private async start(){
-        const port = parsedEnv.PORT
+        const port = process.env.PORT
         this.app.listen(port, () => {
             Logger.info(`Server Started! Http: http://localhost:${port}`)
         });
