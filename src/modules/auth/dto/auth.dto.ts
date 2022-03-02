@@ -19,6 +19,19 @@ export class LoginDto{
     tokens: ITokenResponse
 }
 
+ObjectType()
+export class UserDto{
+    @Field()
+    message: string
+
+    @Field()
+    user: UserEntity
+
+    @Field({nullable: true})
+    profile?: ProfileEntity
+
+}
+
 @ObjectType()
 export class LogoutDto{
     @Field()
