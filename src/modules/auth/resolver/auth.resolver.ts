@@ -63,12 +63,12 @@ export class AuthResolver{
         return  { tokens }
     }
 
-    @Mutation(() => UserDto)
-    @UseMiddleware(AuthMiddleware)
-    async getUser(@Ctx() ctx: Context<ExpressContext>){
-        const { userId } = ctx.req.currentUser
-        const { user, profile } = await this.userService.findOne({id: userId})
-        return { message: "Current User", user, profile }
-    }
+    // @Mutation(() => UserDto)
+    // @UseMiddleware(AuthMiddleware)
+    // async getUser(@Ctx() ctx: Context<ExpressContext>){
+    //     const { userId } = ctx.req.currentUser
+    //     const { user, profile } = await this.userService.findOne({id: userId})
+    //     return { message: "Current User", user, profile }
+    // }
     
 } 
