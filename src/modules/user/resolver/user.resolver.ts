@@ -55,9 +55,7 @@ export class UserResolver{
     async createUser(
         @Arg("body") data: SignUpInput
         ) {
-            const { email, password } = data
-
-            const user = await this.userService.register({email, password})
+            const user = await this.userService.register(data)
             return { message: "User Created", user}
     }
 

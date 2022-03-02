@@ -57,7 +57,7 @@ export default class ExpressServer {
 
         const apolloServer = new ApolloServer({
             // Disabling Apollo's default upload system
-            uploads: false,
+            // uploads: false,
             schema: await buildSchema({
               resolvers: [Resolvers],
               container: Container
