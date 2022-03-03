@@ -4,8 +4,7 @@ import { ExpressContext } from 'apollo-server-express/dist/ApolloServer';
 import { 
     Arg, 
     Ctx, 
-    Mutation, 
-    Query, 
+    Mutation,
     Resolver, 
     UseMiddleware 
 } from 'type-graphql'
@@ -13,7 +12,7 @@ import {
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import AuthService from '@auth/services/auth.service';
 import TokenService from '@auth/services/token.service';
-import { LoginDto, LogoutDto, RefreshTokenDto, UserDto } from '@auth/dto/auth.dto';
+import { LoginDto, LogoutDto, RefreshTokenDto } from '@auth/dto/auth.dto';
 import { LoginInput } from '@auth/inputs/auth.input';
 import { RefreshTokenInput } from '@auth/inputs/token.input';
 import UserService from '@user/services/user.service';
@@ -62,14 +61,6 @@ export class AuthResolver{
         const refreshToken = body.refreshToken
         const tokens = await this.authService.refreshToken({refreshToken: refreshToken})
         return  { tokens }
-    }
-
-    @Query(() => UserDto)
-    @UseMiddleware(AuthMiddleware)
-    async getUser(@Ctx() ctx: Context<ExpressContext>){
-        const { userId } = ctx.req.currentUser
-        const { user, profile } = await this.userService.findOne({id: userId})
-        return { message: "Current User", user, profile }
     }
     
 } 

@@ -20,6 +20,7 @@ import { SignUpInput, UpdateInput } from '@user/inputs/user.input';
 import { AuthMiddleware } from '@middlewares/auth.middleware';
 import { CreateUserDto, UpdateUserDto, uploadPhotoDto } from '@user/dto/user.dto';
 import { UpdateUserClean } from "@helpers//";
+import { UserDto } from "@auth/dto/auth.dto";
 
 @Service()
 @Resolver()
@@ -70,6 +71,14 @@ export class UserResolver{
             const { user, profile } = UpdateUserClean(body)
             const {updatedUser, updatedProfile} = await this.userService.update({id: userId}, user, profile)
             return { message: "User Updated", user: updatedUser, profile: updatedProfile}
-    }    
+    }   
+    
+    @Query(() => UserDto)
+    @UseMiddleware(AuthMiddleware)
+    async getUser(@Ctx() ctx: Context<ExpressContext>){
+        const { userId } = ctx.req.currentUser
+        const { user, profile } = await this.userService.findOne({id: userId})
+        return { message: "Current User", user, profile }
+    }
     
 } 

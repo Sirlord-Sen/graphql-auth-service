@@ -1,5 +1,3 @@
-import { Stream } from "stream";
-import { FileUpload } from "graphql-upload";
 import { Field, InputType } from "type-graphql";
 import { LoginInput } from "@auth/inputs/auth.input";
 
